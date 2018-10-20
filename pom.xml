@@ -1,0 +1,42 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.thong</groupId>
+  <artifactId>pdfUtility</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>PDF Utility</name>
+  
+  <dependencies>
+		<dependency>
+		    <groupId>org.xhtmlrenderer</groupId>
+		    <artifactId>flying-saucer-pdf</artifactId>
+		    <version>9.1.16</version>
+		</dependency>
+
+		<dependency>
+		    <groupId>org.thymeleaf</groupId>
+		    <artifactId>thymeleaf</artifactId>
+		    <version>3.0.10.RELEASE</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/org.xhtmlrenderer/flying-saucer-pdf-itext5 -->
+		<dependency>
+		    <groupId>org.xhtmlrenderer</groupId>
+		    <artifactId>flying-saucer-pdf-itext5</artifactId>
+		    <version>9.1.16</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/org.xhtmlrenderer/core-renderer -->
+		<dependency>
+		    <groupId>org.xhtmlrenderer</groupId>
+		    <artifactId>core-renderer</artifactId>
+		    <version>R8</version>
+		</dependency>
+
+	    <dependency>
+	      	<groupId>net.sf.jtidy</groupId>
+	      	<artifactId>jtidy</artifactId>
+	      	<version>r938</version>
+	    </dependency>
+		
+  </dependencies>
+</project>
