@@ -1,5 +1,8 @@
-.thong {
-	color: blue;
+.commissionTable {
+	width: 90%;
+}
+.commissionTable tbody tr th {
+	text-align: left;
 }
 
 body {

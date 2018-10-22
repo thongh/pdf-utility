@@ -73,14 +73,17 @@ public class PDFUtility {
         templateEngine.setTemplateResolver(templateResolver);
         // Get data
         String restEndpoint = "https://192.168.100.64:8082/pos-api/";
-        String restResource = "reports/commissions?branchCode=MS1&fromDate=01-09-2018&toDate=30-09-2018";     
+        String restResource = "reports/commissions?branchCode=MS1&fromDate=01-09-2018&toDate=30-09-2018";
         String jsonData = callREST(restEndpoint, restResource, "GET", "", "");
         CommissionREST data = createDataFromJson(jsonData);
         Context context = new Context();
         context.setVariable("data", data);
+        context.setVariable("fromDate", fromDate);
+        context.setVariable("toDate", toDate);
         // Thymeleaf
         String renderedHtmlContent = templateEngine.process("template", context);
         String xHtml = convertToXhtml(renderedHtmlContent);
+        System.out.println("html: " + xHtml);
         ITextRenderer renderer = new ITextRenderer();
         renderer.getFontResolver().addFont("Code39.ttf", IDENTITY_H, EMBEDDED);
         // Working dir

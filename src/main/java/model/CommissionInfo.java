@@ -22,10 +22,10 @@ public class CommissionInfo {
     private String transactionType;
     
     @JsonProperty("receiptAmount")
-    private Integer receiptAmount;
+    private double receiptAmount;
     
     @JsonProperty("commissionAmount")
-    private Integer commissionAmount;
+    private double commissionAmount;
     
     @JsonProperty("quantity")
     private Integer quantity;
@@ -44,22 +44,22 @@ public class CommissionInfo {
     }
     
     @JsonProperty("receiptAmount")
-    public Integer getReceiptAmount() {
+    public double getReceiptAmount() {
     return receiptAmount;
     }
 
     @JsonProperty("receiptAmount")
-    public void setReceiptAmount(Integer receiptAmount) {
+    public void setReceiptAmount(double receiptAmount) {
     this.receiptAmount = receiptAmount;
     }
     
     @JsonProperty("commissionAmount")
-    public Integer getCommissionAmount() {
+    public double getCommissionAmount() {
     return commissionAmount;
     }
 
     @JsonProperty("commissionAmount")
-    public void setCommissionAmount(Integer commissionAmount) {
+    public void setCommissionAmount(double commissionAmount) {
     this.commissionAmount = commissionAmount;
     }
 
