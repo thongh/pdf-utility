@@ -1,15 +1,14 @@
 package pdf;
 
 import org.thymeleaf.TemplateEngine;
+
 import org.thymeleaf.context.Context;
 import org.thymeleaf.templateresolver.ClassLoaderTemplateResolver;
 
 import model.CommissionREST;
-import model.ShopCommission;
 import org.w3c.tidy.Tidy;
 import org.xhtmlrenderer.pdf.ITextRenderer;
 
-import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import static com.itextpdf.text.pdf.BaseFont.EMBEDDED;
@@ -34,8 +33,6 @@ import java.security.KeyManagementException;
 import java.security.NoSuchAlgorithmException;
 import java.security.cert.X509Certificate;
 import java.util.Base64;
-import java.util.Date;
-import java.util.Map;
 
 import javax.net.ssl.HostnameVerifier;
 import javax.net.ssl.HttpsURLConnection;
@@ -65,6 +62,7 @@ public class PDFUtility {
             String toDate, String reportName) throws Exception {
         // Setup thymeleaf engine
         ClassLoaderTemplateResolver templateResolver = new ClassLoaderTemplateResolver();
+
         templateResolver.setPrefix("/");
         templateResolver.setSuffix(".html");
         templateResolver.setTemplateMode(HTML);
@@ -83,7 +81,6 @@ public class PDFUtility {
         // Thymeleaf
         String renderedHtmlContent = templateEngine.process("template", context);
         String xHtml = convertToXhtml(renderedHtmlContent);
-        System.out.println("html: " + xHtml);
         ITextRenderer renderer = new ITextRenderer();
         renderer.getFontResolver().addFont("Code39.ttf", IDENTITY_H, EMBEDDED);
         // Working dir
