@@ -1,42 +1,23 @@
+<!DOCTYPE html>
 <html>
 <head><meta http-equiv=Content-Type content="text/html; charset=UTF-8">
-<style type="text/css">
-
-span.cls_002{font-family:Arial,serif;font-size:18.1px;color:rgb(255,255,255);font-weight:bold;font-style:normal;text-decoration: none}
-div.cls_002{font-family:Arial,serif;font-size:18.1px;color:rgb(255,255,255);font-weight:bold;font-style:normal;text-decoration: none}
-span.cls_003{font-family:Arial,serif;font-size:13.1px;color:rgb(255,255,255);font-weight:bold;font-style:normal;text-decoration: none}
-div.cls_003{font-family:Arial,serif;font-size:13.1px;color:rgb(255,255,255);font-weight:bold;font-style:normal;text-decoration: none}
-span.cls_004{font-family:Arial,serif;font-size:12.1px;color:rgb(255,255,255);font-weight:bold;font-style:normal;text-decoration: none}
-div.cls_004{font-family:Arial,serif;font-size:12.1px;color:rgb(255,255,255);font-weight:bold;font-style:normal;text-decoration: none}
-span.cls_005{font-family:Arial,serif;font-size:14.1px;color:rgb(255,255,255);font-weight:bold;font-style:normal;text-decoration: none; position:relative; left:15px}
-div.cls_005{font-family:Arial,serif;font-size:14.1px;color:rgb(255,255,255);font-weight:bold;font-style:normal;text-decoration: none}
-span.cls_011{font-family:Arial,serif;font-size:16.1px;color:rgb(237,27,37);font-weight:bold;font-style:normal;text-decoration: underline}
-div.cls_011{font-family:Arial,serif;font-size:16.1px;color:rgb(237,27,37);font-weight:bold;font-style:normal;text-decoration: none}
-span.cls_012{font-family:Arial,serif;font-size:15.1px;color:rgb(0,0,0);font-weight:bold;font-style:italic;text-decoration: underline}
-div.cls_012{font-family:Arial,serif;font-size:15.1px;color:rgb(0,0,0);font-weight:bold;font-style:italic;text-decoration: none}
-span.cls_008{font-family:Arial,serif;font-size:10.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none; position: relative; left: 15px}
-div.cls_008{font-family:Arial,serif;font-size:10.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-span.cls_010{font-family:Arial,serif;font-size:14.1px;color:rgb(0,0,0);font-weight:bold;font-style:italic;text-decoration: none}
-div.cls_010{font-family:Arial,serif;font-size:14.1px;color:rgb(0,0,0);font-weight:bold;font-style:italic;text-decoration: none}
-span.cls_013{font-family:Arial,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: underline}
-div.cls_013{font-family:Arial,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
-
-</style>
+<title>Commission Report</title>
+<link rel="stylesheet" type="text/css" href="static/css/style.css">
 </head>
 <body>
 <div style="position:absolute;left:50%;margin-left:-400px;top:0px;width:800px;height:842px;border-style:outset;overflow:hidden">
-<div style="position:absolute;left:0px;top:0px">
-<img src="static/background1.jpg" width=800 height=842></div>
-<div style="position:absolute;left:176.00px;top:30.15px" class="cls_002"><span class="cls_002">Summarised Stock Sales Per Shop</span></div>
-<div style="position:absolute;left:152.00px;top:73.38px" class="cls_003"><span class="cls_003">Date [[${fromDate}]] - [[${toDate}]]</span></div>
-<div style="position:absolute;left:21.00px;top:107.34px" class="cls_005"><span class="cls_005">Transaction Type</span></div>
+<div style="position:absolute;left:51.00px;top:0px">
+<img src="static/img/background1.png" width=800 height=842 alt="Econet logo"></div>
+<div style="position:absolute;left:210.00px;top:30.15px" class="cls_002"><span class="cls_002">Summarised Stock Sales Per Shop</span></div>
+<div style="position:absolute;left:210.00px;top:73.38px" class="cls_003"><span class="cls_003">Date [[${fromDate}]] - [[${toDate}]]</span></div>
+<div style="position:absolute;left:51.00px;top:107.34px" class="cls_005"><span class="cls_005">Transaction Type</span></div>
 <div style="position:absolute;left:246.00px;top:107.34px" class="cls_005"><span class="cls_005">Receipt Amount</span></div>
 <div style="position:absolute;left:423.00px;top:107.34px" class="cls_005"><span class="cls_005">Commission Amount</span></div>
-<div style="position:absolute;left:641.00px;top:107.34px" class="cls_005"><span class="cls_005">Quantity</span></div>
+<div style="position:absolute;left:621.00px;top:107.34px" class="cls_005"><span class="cls_005">Quantity</span></div>
 <div style="position:absolute;left:101.00px;top:145.24px" class="cls_011"><span class="cls_011">[[${data.getShopCommissions().get(0).getShopName()}]]</span></div>
 <div style="position:absolute;left:101.00px;top:195.29px" class="cls_012"><span class="cls_012">[[${data.getShopCommissions().get(0).getShopCode()}]]</span></div>
 
-<table style="position:absolute;left:51.00px;top:227.50px;width:60%" class="commissionTable">
+<table style="position:absolute;left:81.00px;top:227.50px;" class="commissionTable">
 <tr>
 	<th>Transaction Type</th>
     <th>Receipt Amount</th>

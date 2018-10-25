@@ -84,6 +84,18 @@
 	</dependencies>
 
 	<build>
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+				<includes>
+					<include>Code39.ttf</include>
+					<include>template.html</include>
+					<include>static/css/style.css</include>
+					<include>static/img/background1.png</include>
+				</includes>
+			</resource>
+		</resources>
+
 		<plugins>
 			<!-- any other plugins -->
 			<plugin>
